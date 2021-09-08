@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/drox13/SD-lab3-middleware/issues"
   },
-  "homepage": "https://github.com/drox13/SD-lab3-middleware#readme"
+  "homepage": "https://github.com/drox13/SD-lab3-middleware#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
