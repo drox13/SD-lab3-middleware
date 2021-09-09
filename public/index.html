@@ -6,7 +6,6 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>LAB 3 - DB</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='js/client.js' async></script>
 </head>
 
@@ -21,7 +20,13 @@
         <span id="lbOffline">Offline</span>
     </p>
 
+    <input type="text" placeholder="Ingrese el Id" id="id">
+    <input type="text" placeholder="RAM Limit" id="ram">
+    <input type="text" placeholder="CPU Limit" id="cpu">
+
     <button onclick="sendInfo()"> Send Info Query</button>
+
+    <button onclick="sendLimits()">Send limits</button>
     <script src="./socket.io/socket.io.js"></script>
 </body>
 
