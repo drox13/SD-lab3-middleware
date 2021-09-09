@@ -16,7 +16,7 @@ client.on('disconnect', () =>{
 });
 
 client.on('send-data-resource', ({date, ram, cpu}) =>{
-    console.log(date.toString());
+    console.log(date);
     console.log(ram);
     console.log(cpu);
 })
