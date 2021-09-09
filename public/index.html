@@ -20,7 +20,13 @@
         <span id="lbOffline">Offline</span>
     </p>
 
+    <input type="text" placeholder="Ingrese el Id" id="id">
+    <input type="text" placeholder="RAM Limit" id="ram">
+    <input type="text" placeholder="CPU Limit" id="cpu">
+
     <button onclick="sendInfo()"> Send Info Query</button>
+
+    <button onclick="sendLimits()">Send limits</button>
     <script src="./socket.io/socket.io.js"></script>
 </body>
 
