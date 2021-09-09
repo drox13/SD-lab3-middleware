@@ -11,9 +11,18 @@
 </head>
 
 <body>
-    <h2> Test redis</h2>
+    <h2> Test redis & Socket Client</h2>
+    <hr>
     <br>
+
+    <p>
+        Server status:
+        <span id="lbOnline">Online</span>
+        <span id="lbOffline">Offline</span>
+    </p>
+
     <button onclick="sendInfo()"> Send Info Query</button>
+    <script src="./socket.io/socket.io.js"></script>
 </body>
 
 </html>

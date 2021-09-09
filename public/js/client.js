@@ -1,4 +1,25 @@
-console.log("clientJs")
+const lbOnline = document.querySelector('#lbOnline');
+const lbOffline = document.querySelector('#lbOffline');
+
+const client = io();
+
+client.on('connect', () =>{
+    console.log('Connected')
+    lbOffline.style.display = 'none'
+    lbOnline.style.display = ''
+});
+
+client.on('disconnect', () =>{
+    console.log('Disconnect from server!')
+    lbOnline.style.display = 'none'
+    lbOffline.style.display = ''
+});
+
+client.on('send-data-resource', ({date, ram, cpu}) =>{
+    console.log(date.toString());
+    console.log(ram);
+    console.log(cpu);
+})
 
 const sendInfo = () => {
     const xhr = new XMLHttpRequest();
